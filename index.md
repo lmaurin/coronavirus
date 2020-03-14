@@ -1,12 +1,10 @@
 *Aviso importante:*
 
-**El articulo original en Frances esta disponible en el blog _Sciences étonnante_ de David Louapre. Muchas gracias a David por autorizar esta traducción.**
+**El articulo original en Frances esta disponible en el blog _Science étonnante_ de David Louapre. Muchas gracias a David por autorizar esta traducción.**
 
 [https://sciencetonnante.wordpress.com/?fbclid=IwAR14Wwlyl-Jdz_UeZQ-ZrrVEu_PP2ZLOSOOtpGwMfAtae0w1CAUd42TWrZU](https://sciencetonnante.wordpress.com/?fbclid=IwAR14Wwlyl-Jdz_UeZQ-ZrrVEu_PP2ZLOSOOtpGwMfAtae0w1CAUd42TWrZU)
 
 # Epidemia, nube radioactiva y distanciamiento social
-
-
 
 El propósito de esta nota (algo inusual) es ilustrar de forma sencilla la **increíble eficacia potencial de las medidas de distanciamiento social** (limitar las reuniones, la higiene, el teletrabajo, el cierre de escuelas...) ante una epidemia que se convierte en pandemia.
 
