@@ -1,4 +1,4 @@
-*Aviso importante*
+*Aviso importante:*
 
 **El articulo original en Frances esta disponible en el blog _Sciences étonnante_ de David Louapre. Muchas gracias a David por autorizar esta traducción.**
 
