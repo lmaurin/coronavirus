@@ -1,8 +1,12 @@
+**El articulo original en Frances esta disponible en el blog _Sciences étonnante_ de David Louapre. Muchas gracias a David por autorizar esta traducción.**
+
+[https://sciencetonnante.wordpress.com/?fbclid=IwAR14Wwlyl-Jdz_UeZQ-ZrrVEu_PP2ZLOSOOtpGwMfAtae0w1CAUd42TWrZU](https://sciencetonnante.wordpress.com/?fbclid=IwAR14Wwlyl-Jdz_UeZQ-ZrrVEu_PP2ZLOSOOtpGwMfAtae0w1CAUd42TWrZU)
+
 # Epidemia, nube radiactiva y distanciamiento social
 
 
 
-El propósito de este post (algo inusual) es ilustrar de forma sencilla la increíble eficacia potencial de las medidas de distanciamiento social (limitar las reuniones, la higiene, el teletrabajo, el cierre de escuelas...) ante una epidemia que se convierte en pandemia.
+El propósito de esta nota (algo inusual) es ilustrar de forma sencilla la increíble eficacia potencial de las medidas de distanciamiento social (limitar las reuniones, la higiene, el teletrabajo, el cierre de escuelas...) ante una epidemia que se convierte en pandemia.
 
 Una epidemia es una reacción en cadena, y esto cambia todo sobre el impacto potencial de tales medidas, en comparación con otras fuentes de peligro.
 
@@ -29,14 +33,14 @@ Voy a utilizarlo con fines educativos, para ilustrar esta noción de umbral, y c
 
 En este modelo, consideramos que hay 3 poblaciones: la sana, la infectada y la remitida (la que ha tenido el virus y se ha recuperado). Y modelaremos dos fenómenos simples:
 
-    Las personas infectadas infectarán a las personas sanas.
-    Las personas infectadas se curarán gradualmente.
+* Las personas infectadas infectarán a las personas sanas.
+* Las personas infectadas se curarán gradualmente.
 
 Para esto, necesitamos 3 parámetros:
 
-    Duración D de la enfermedad, durante la cual somos contagiosos.
-    El número promedio C de contactos que tenemos con otras personas cada día.
-    La probabilidad P de que un contacto entre una persona infectada y una persona sana conduzca a una transmisión del virus.
+* Duración D de la enfermedad, durante la cual somos contagiosos.
+* El número promedio C de contactos que tenemos con otras personas cada día.
+* La probabilidad P de que un contacto entre una persona infectada y una persona sana conduzca a una transmisión del virus.
 
 Estos parámetros a menudo no se conocen con precisión y dependerán de la definición precisa de lo que se denomina "contacto". Pero verás que no es muy importante.
 
@@ -44,7 +48,7 @@ Tomemos una persona infectada: cada día se cruzará con gente C, a la que conta
 
 El número total de personas que infectará será, por lo tanto, el producto de estos tres términos, que tradicionalmente anotamos como R0
 
-R_0 = C por P por D.
+R_0 = C \times P \times D.
 
 
 
@@ -74,11 +78,17 @@ Una vez más, el objetivo no es hacer predicciones, es para que puedas ver por t
 
 Tomemos un R0 de 2.5. Esto se puede obtener diciendo que la enfermedad dura 10 días, y que cada día hay 50 contactos con una probabilidad de transmisión del 0,5%. Estas dos últimas cifras no son importantes, es el producto de las dos que cuenta.
 
+![](https://sciencetonnante.files.wordpress.com/2020/03/capture-de28099c3a9cran-2020-03-12-c3a0-12.58.57.png?w=451&h=214)
+
 El gráfico siguiente representa el número acumulado de casos en función del tiempo (en días a partir de hoy) en Francia, si nos quedamos en un R0 de 2,5. (¡Esto no es una predicción, es un "modelo de juguete"!)
+
+![](https://sciencetonnante.files.wordpress.com/2020/03/capture-de28099c3a9cran-2020-03-12-c3a0-12.37.55.png?w=676&h=384)
 
 Podemos ver que en 6 meses, casi todos habrán contraído la enfermedad. Con una tasa de mortalidad del 3%, hay casi 2 millones de muertes (¡Esto no es una predicción, es un "modelo de juguete"!).
 
 Ahora imaginemos que ahora podemos conseguir inmediatamente dividir el R0 por 4: la mitad de contactos, y contactos más distantes que reducen a la mitad la probabilidad de transmisión. Eso no parece inalcanzable, ¿verdad? El R0 será entonces 0.62. Y aquí está el resultado
+
+![](https://sciencetonnante.files.wordpress.com/2020/03/capture-de28099c3a9cran-2020-03-12-c3a0-12.43.19.png?w=676&h=384)
 
 El límite es de 6000 casos acumulados, y por lo tanto 180 muertes con una tasa de mortalidad del 3% (¡Esto no es una predicción, es un "modelo de juguete"!).
 
@@ -92,7 +102,7 @@ Eso es todo lo que quería ilustrar. Toma el modelo de Excel, juega con él. Es 
 
 Bajar el R0 rápidamente es muy accesible, sin caer necesariamente en una situación de "país muerto" o "ley marcial". Creo que el cierre de escuelas e instituciones educativas podría crear la señal necesaria para que todos se involucren. Y en pocas semanas se doblaría.
 
-Descargue el modelo de juguete. Juega con él. Compruébelo usted mismo.
+[Descargue el modelo de juguete. Juega con él. Compruébelo usted mismo.](https://docs.google.com/spreadsheets/d/1YXUcJHfcZ33ER27AoNIEm0UEOsI0M-2VYOaLeAYtxP0/edit?usp=sharing)
 
 Edición del 13/03/2020: Mucha gente ha hecho pequeñas aplicaciones que ilustran el modelo de forma interactiva:
 
