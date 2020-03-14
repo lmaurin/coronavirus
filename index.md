@@ -1,8 +1,10 @@
+*Aviso importante*
+
 **El articulo original en Frances esta disponible en el blog _Sciences étonnante_ de David Louapre. Muchas gracias a David por autorizar esta traducción.**
 
 [https://sciencetonnante.wordpress.com/?fbclid=IwAR14Wwlyl-Jdz_UeZQ-ZrrVEu_PP2ZLOSOOtpGwMfAtae0w1CAUd42TWrZU](https://sciencetonnante.wordpress.com/?fbclid=IwAR14Wwlyl-Jdz_UeZQ-ZrrVEu_PP2ZLOSOOtpGwMfAtae0w1CAUd42TWrZU)
 
-# Epidemia, nube radiactiva y distanciamiento social
+# Epidemia, nube radioactiva y distanciamiento social
 
 
 
@@ -46,15 +48,15 @@ Estos parámetros a menudo no se conocen con precisión y dependerán de la defi
 
 Tomemos una persona infectada: cada día se cruzará con gente C, a la que contaminará con una probabilidad de P. Y esto ocurrirá durante cada uno de los días D que dure su enfermedad.
 
-**El número total de personas que infectará** será, por lo tanto, el producto de estos tres términos, que tradicionalmente anotamos como R0
+**El número total de personas que infectará** será, por lo tanto, el producto de estos tres términos, que tradicionalmente anotamos como R_0
 
-R_0 = C \times P \times D.
+R_0 = C x P x D.
 
 
 
 Este parámetro se denomina tasa de reproducción, e incluso sin ejecutar el modelo matemático, no es muy difícil convencerse de que tiene una influencia decisiva en el destino de la epidemia.
 
-Si vale la pena decir 2: cada persona infectada contaminará a 2 personas, que a su vez contaminarán a 2 personas, que a su vez contaminarán a 2 personas, etc., entonces no es muy difícil convencerse de que tiene una influencia decisiva en el futuro de la epidemia. Hay una reacción en cadena, el número de enfermos aumenta exponencialmente, la epidemia explota.
+Si vale 2, por ejemplo, cada persona infectada contaminará a 2 personas, que a su vez contaminarán a 2 personas, que a su vez contaminarán a 2 personas, etc., entonces no es muy difícil convencerse de que tiene una influencia decisiva en el futuro de la epidemia. Hay una reacción en cadena, el número de enfermos aumenta exponencialmente, la epidemia explota.
 
 Ahora bien, si este coeficiente es inferior a 1: cada persona infectada dará la enfermedad a menos de una persona, por lo que el número neto de enfermos disminuirá y gradualmente la epidemia se extinguirá.
 
