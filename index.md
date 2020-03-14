@@ -48,9 +48,9 @@ Estos parámetros a menudo no se conocen con precisión y dependerán de la defi
 
 Tomemos una persona infectada: cada día se cruzará con gente C, a la que contaminará con una probabilidad de P. Y esto ocurrirá durante cada uno de los días D que dure su enfermedad.
 
-**El número total de personas que infectará** será, por lo tanto, el producto de estos tres términos, que tradicionalmente anotamos como R_0
+**El número total de personas que infectará** será, por lo tanto, el producto de estos tres términos, que tradicionalmente anotamos como R0
 
-R_0 = C x P x D.
+R0 = C x P x D.
 
 
 
