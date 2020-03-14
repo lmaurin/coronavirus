@@ -1,96 +1,103 @@
-# Épidémie, nuage radioactif et distanciation sociale
+# Epidemia, nube radiactiva y distanciamiento social
 
-Le but de ce billet (un peu inhabituel) est d’illustrer de façon simple l’incroyable efficacité potentielle des mesures de distanciation sociale (limiter les rencontres, hygiène, télétravail, fermeture des écoles…) lorsque l’on est face à une épidémie qui vire à la pandémie.
 
-Une épidémie est une réaction en chaîne, et cela change tout sur l’impact potentiel de mesures de ce type, par rapport à d’autres sources de danger.
 
-Pour bien le comprendre, imaginons une autre situation : supposons que l’on ne soit pas face à une épidémie, mais à un danger d’un autre type, disons un nuage radioactif (ou chimique). Du fait de la présence du nuage, imaginons qu’il devienne risqué de sortir, que cela puisse nous rendre malade, voire à terme nous tuer. (Et supposons qu’enfermés  chez soi on ne craigne rien).
+El propósito de este post (algo inusual) es ilustrar de forma sencilla la increíble eficacia potencial de las medidas de distanciamiento social (limitar las reuniones, la higiene, el teletrabajo, el cierre de escuelas...) ante una epidemia que se convierte en pandemia.
 
-Le gouvernement décide de prendre des mesures pour confiner les gens chez eux : fermer certaines écoles, encourager le télétravail, inviter les gens à reporter leurs déplacements, les réunions etc.
+Una epidemia es una reacción en cadena, y esto cambia todo sobre el impacto potencial de tales medidas, en comparación con otras fuentes de peligro.
 
-Dans ce cas, on peut légitimement imaginer que les vies sauvées seront proportionnées à l’intensité des efforts :
+Para entender esto, imaginemos otra situación: asumamos que no nos enfrentamos a una epidemia, sino a otro tipo de peligro, digamos una nube radioactiva (o química). Debido a la presencia de la nube, imaginemos que se vuelve arriesgado salir, que podría hacernos enfermar, o incluso eventualmente matarnos. (Y supongamos que encerrados en casa estamos a salvo).
 
-    Si 10% des gens restent chez eux, on évitera 10% des morts;
-    Si 50% des gens restent chez eux, on évitera 50% des morts;
-    Si 95% des gens restent chez eux, on évitera 95% des morts.
+El gobierno decide tomar medidas para confinar a la gente a sus casas: cerrar algunas escuelas, fomentar el teletrabajo, invitar a la gente a posponer sus viajes, reuniones, etc.).
 
-L’effet est linéaire.
+En este caso, se puede imaginar legítimamente que las vidas salvadas serán proporcionales a la intensidad de los esfuerzos:
 
-Une épidémie, ça n’est pas du tout ça. Une épidémie est une réaction en chaîne, cela implique qu’il y a un effet de seuil sur l’efficacité des mesures, et cet effet de seuil est très fortement non-linéaire.
+* Si el 10% de la gente se queda en casa, evitaremos el 10% de las muertes;
+* Si el 50% de la gente se queda en casa, evitaremos el 50% de las muertes.
+* Si el 95% de la gente se queda en casa, evitaremos el 95% de las muertes.
 
-Même quand on est familier avec les mathématiques associées, il est assez difficile de se représenter cet effet de seuil, alors prenons un exemple concret à partir d’un modèle épidémiologique.
+El efecto es lineal.
 
-Le modèle que je vais utiliser s’appelle le modèle SIR. C’est un des modèles les plus simples, et l’usage que je vais en faire n’est pas prédictif. Je ne cherche pas à prédire réellement le nombre de morts ou d’infectés : Le modèle est trop simple, les paramètres seront trop imprécis.
+Una epidemia no es así en absoluto. Una epidemia es una reacción en cadena, implica que hay un efecto umbral en la eficacia de las medidas, y este efecto umbral es muy fuertemente no lineal.
 
-Je vais en faire un usage pédagogique, pour illustrer cette notion de seuil, et comment les mesures de distanciation sociales peuvent avoir un effet incroyablement efficace, pas du tout proportionné à l’effort comme dans le cas du nuage radioactif.
+Incluso cuando se está familiarizado con las matemáticas asociadas, es bastante difícil imaginar este efecto umbral, así que tomemos un ejemplo concreto de un modelo epidemiológico.
 
-Dans ce modèle, on considère que l’on a 3 populations : les sains, les infectés, et les remis (ceux qui ont eu le virus et ont guéri). Et on va modéliser deux phénomènes simples :
+El modelo que voy a usar se llama el modelo SIR. Es uno de los modelos más simples, y el uso que voy a hacer de él no es predictivo. No estoy tratando de predecir el número de muertes o el número de personas infectadas: el modelo es demasiado simple, los parámetros serán demasiado imprecisos.
 
-    Les gens infectés vont infecter les gens sains.
-    Les gens infectés vont progressivement guérir.
+Voy a utilizarlo con fines educativos, para ilustrar esta noción de umbral, y cómo las medidas de distanciamiento social pueden tener un efecto increíblemente efectivo, nada proporcional al esfuerzo como en el caso de la nube radiactiva.
 
-Pour cela, on a besoin de 3 paramètres :
 
-    La durée D de la maladie, pendant laquelle on est contagieux.
-    Le nombre moyen C de contacts que l’on a chaque jour avec d’autres gens.
-    La probabilité P qu’un contact entre un infecté et un sain conduise à une transmission du virus.
+En este modelo, consideramos que hay 3 poblaciones: la sana, la infectada y la remitida (la que ha tenido el virus y se ha recuperado). Y modelaremos dos fenómenos simples:
 
-Bien souvent, on ne connait pas avec précision ces paramètres, qui d’ailleurs vont dépendre de la définition précise de ce qu’on appelle « un contact ». Mais vous allez voir que ça n’est pas très important.
+    Las personas infectadas infectarán a las personas sanas.
+    Las personas infectadas se curarán gradualmente.
 
-Prenons un infecté : chaque jour il va croiser C personnes, qu’il contaminera avec une probabilité P. Et cela se produira pendant chacun des D jours que durera sa maladie.
+Para esto, necesitamos 3 parámetros:
 
-Le nombre total de personne qu’il contaminera sera donc le produit de ces trois termes, que l’on note traditionnellement R0
+    Duración D de la enfermedad, durante la cual somos contagiosos.
+    El número promedio C de contactos que tenemos con otras personas cada día.
+    La probabilidad P de que un contacto entre una persona infectada y una persona sana conduzca a una transmisión del virus.
 
-R_0 = C \times P \times D .
+Estos parámetros a menudo no se conocen con precisión y dependerán de la definición precisa de lo que se denomina "contacto". Pero verás que no es muy importante.
 
-On appelle ce paramètre le taux de reproduction, et même sans faire tourner le modèle mathématique, il n’est pas très compliqué de se convaincre qu’il a une influence déterminante sur le devenir de l’épidémie.
+Tomemos una persona infectada: cada día se cruzará con gente C, a la que contaminará con una probabilidad de P. Y esto ocurrirá durante cada uno de los días D que dure su enfermedad.
 
-S’il vaut disons 2 : chaque infecté contaminera 2 personnes, qui elles-même contamineront 2 personnes, qui elles-même contamineront 2 personnes etc. On a une réaction en chaîne, le nombre de malades augmente de façon exponentielle, l’épidémie explose.
+El número total de personas que infectará será, por lo tanto, el producto de estos tres términos, que tradicionalmente anotamos como R0
 
-Maintenant si ce coefficient est inférieur à 1 : chaque infecté refilera la maladie à moins d’une personne, donc le nombre net de malade diminuera et progressivement l’épidémie s’éteindra.
+R_0 = C por P por D.
 
-Il y a un effet de seuil monstrueux. Pour éteindre une épidémie de façon « naturelle », il faut que le R0 soit sous le seuil fatidique de 1. Alors combien vaut le R0 dans le cas du Covid-19 ? On n’en sait rien exactement. Probablement entre 2 et 4.
 
-Mais comme vous le voyez, cette valeur n’est pas intrinsèque à la maladie, elle dépend de facteurs comportementaux : combien de contacts quotidiens, quelle probabilité qu’une transmission ait lieu.
 
-En adoptant des mesures de distanciation sociale (moins de contacts, se tenir plus loin, hygiène, suppressions des rassemblements et réunions inutiles, fermeture des établissements scolaires, télétravail, etc.), on peut très facilement faire baisser le R0.
+Este parámetro se denomina tasa de reproducción, e incluso sin ejecutar el modelo matemático, no es muy difícil convencerse de que tiene una influencia decisiva en el destino de la epidemia.
 
-Et le point clé ici, est que le bénéfice ne sera pas du tout proportionné à l’effort. Si on en fait suffisamment pour passer rapidement sous le seuil, c’est gagné.
+Si vale la pena decir 2: cada persona infectada contaminará a 2 personas, que a su vez contaminarán a 2 personas, que a su vez contaminarán a 2 personas, etc., entonces no es muy difícil convencerse de que tiene una influencia decisiva en el futuro de la epidemia. Hay una reacción en cadena, el número de enfermos aumenta exponencialmente, la epidemia explota.
 
-Imaginons que le R0 soit initialement de 2,5. C’est une hypothèse raisonnable pour le Covid-19. Si on arrive à le diviser par 4 on bloque très très vite la propagation de l’épidémie.
+Ahora bien, si este coeficiente es inferior a 1: cada persona infectada dará la enfermedad a menos de una persona, por lo que el número neto de enfermos disminuirá y gradualmente la epidemia se extinguirá.
 
-Diviser le R0 par 4 est loin d’être inaccessible : cela peut vouloir dire par exemple avoir 2 fois moins de contacts, et faire en sorte que la probabilité de transmission soit divisée par 2 (par une distance plus importante et une attention particulière à l’hygiène.)
+Hay un efecto umbral monstruoso. Para extinguir una epidemia "naturalmente", el R0 debe estar por debajo del fatídico umbral de 1, así que ¿cuánto es el R0 en el caso de Covid-19? No lo sabemos exactamente. Probablemente entre dos y cuatro.
 
-Pour bien illustrer ce point, je me suis amusé à mettre un modèle de type SIR dans Excel (TELECHARGEABLE ICI, sinon voir la fin du billet) , en prenant comme point de départ la situation approximative en France au 11/03/2020.
+Pero como se puede ver, este valor no es intrínseco a la enfermedad, sino que depende de factores de comportamiento: cuántos contactos diarios, qué probabilidad hay de que se produzca la transmisión.
 
-Encore une fois, le but n’est pas de faire de la prédiction, c’est que vous puissiez voir par vous-même, par l’expérimentation « numérique », que cet effet de seuil du R0 est monstrueux. Ceci est donc un « modèle-jouet ».
 
-Prenons un R0 de 2,5. On peut l’obtenir en disant que la maladie dure 10 jours, et que chaque jour on a 50 contacts avec une probabilité de transmission de 0,5%. Ces deux derniers chiffres ne sont pas important, c’est le produit des deux qui compte.
+Adoptando medidas de distanciamiento social (menos contacto, mantenerse más lejos, higiene, eliminar reuniones y encuentros innecesarios, cerrar escuelas, teletrabajo, etc.), el R0 puede ser muy fácilmente bajado.
 
-Le graphique ci-dessous représente le nombre cumulé de cas en fonction du temps (en jours à partir d’aujourd’hui) en France, si on reste à un R0 de 2,5. (Ca n’est pas une prédiction, c’est un « modèle-jouet » !)
+Y el punto clave aquí es que el beneficio no será en absoluto proporcional al esfuerzo. Si se hace lo suficiente para caer rápidamente por debajo del umbral, la recompensa está ahí.
 
-On voit qu’en 6 mois, quasi tout le monde aura chopé la maladie. Avec un taux de mortalité de 3%, on est quasi 2 millions de morts (Ca n’est pas une prédiction, c’est un « modèle-jouet » !)
+Imaginemos que el R0 es inicialmente 2.5. Es una suposición razonable para Covid-19. Si logramos dividirlo por 4, podemos detener la propagación de la epidemia muy, muy rápidamente.
 
-Maintenant imaginons que l’on arrive tout de suite maintenant à diviser par 4 le R0 : deux fois moins de contacts, et des contacts plus distants qui divisent par 2 la probabilité de transmission. Ca parait pas inatteignable, non ? Le R0 sera alors de 0,62. Et voici le résultat
+Dividir el R0 por 4 está lejos de ser inaccesible: puede significar, por ejemplo, tener la mitad de contactos y hacer que la probabilidad de transmisión se divida por 2 (por una mayor distancia y atención a la higiene).
 
-On plafonne à 6000 cas cumulés, et donc 180 morts avec un taux de mortalité de 3% (Ca n’est pas une prédiction, c’est un « modèle-jouet » !)
+Para ilustrar bien este punto, me divertí al poner un modelo de tipo SIR en Excel (DESCARGAR AQUÍ, si no, ver el final del billete), tomando como punto de partida la situación aproximada en Francia el 11/03/2020.
 
-Une différence monstrueuse, énorme. Totalement disproportionnée par rapport au changement initial qu’on a fait (des « simples » divisions par 2 des contacts et des transmissions).
+Una vez más, el objetivo no es hacer predicciones, es para que puedas ver por ti mismo, a través de la experimentación "numérica", que este efecto de umbral R0 es monstruoso. Así que esto es un "modelo de juguete".
 
-Une épidémie est une réaction en chaîne. Les mesures de distanciation sociale peuvent avoir un effet totalement disproportionné. C’est très très très différent du cas du nuage radioactif, où les mesures de confinement auraient un effet essentiellement linéaire.
 
-Et c’est évidemment lié au fait que dans le cas du nuage, en faisant attention on ne protège que soi. Ici on protège tout le monde.
+Tomemos un R0 de 2.5. Esto se puede obtener diciendo que la enfermedad dura 10 días, y que cada día hay 50 contactos con una probabilidad de transmisión del 0,5%. Estas dos últimas cifras no son importantes, es el producto de las dos que cuenta.
 
-C’est tout ce que je voulais illustrer. Prenez le modèle Excel, jouez avec. Ca n’est qu’un modèle, le plus simple de tous en épidémiologie. Il n’a AUCUNE valeur prédictive sur les détails des chiffres. Il est là pour illustrer le principe de réaction en chaîne, qui est au coeur de la notion d’épidémie. Les détails du modèle ne sont pas important, cet effet de réaction en chaine existe dans tous les modèles.
+El gráfico siguiente representa el número acumulado de casos en función del tiempo (en días a partir de hoy) en Francia, si nos quedamos en un R0 de 2,5. (¡Esto no es una predicción, es un "modelo de juguete"!)
 
-Faire baisser rapidement le R0 est très accessible, sans forcément tomber dans une situation de « pays mort » ou de « loi martiale ». Je pense que fermer les écoles et les établissement d’enseignement pourrait créer le signal nécessaire pour que tout le monde y mette du sien. Et en quelques semaines ce serait plié.
+Podemos ver que en 6 meses, casi todos habrán contraído la enfermedad. Con una tasa de mortalidad del 3%, hay casi 2 millones de muertes (¡Esto no es una predicción, es un "modelo de juguete"!).
 
-Téléchargez le modèle-jouet. Jouez avec. Voyez par vous même.
+Ahora imaginemos que ahora podemos conseguir inmediatamente dividir el R0 por 4: la mitad de contactos, y contactos más distantes que reducen a la mitad la probabilidad de transmisión. Eso no parece inalcanzable, ¿verdad? El R0 será entonces 0.62. Y aquí está el resultado
 
-Edit du 13/03/2020 : Pas mal de gens ont fait des petites applis qui illustrent le modèle de façon interactive :
+El límite es de 6000 casos acumulados, y por lo tanto 180 muertes con una tasa de mortalidad del 3% (¡Esto no es una predicción, es un "modelo de juguete"!).
 
-https://jflorian.shinyapps.io/SIRmodel/
+Una monstruosa, enorme diferencia. Totalmente desproporcionado en comparación con el cambio inicial que hicimos ("simple" reducción a la mitad de los contactos y transmisiones).
 
-https://sciencetonnante-epidemie.netlify.com
+Un brote es una reacción en cadena. Las medidas de distanciamiento social pueden tener un efecto totalmente desproporcionado. Esto es muy, muy, muy diferente del caso de la nube radiactiva, donde las medidas de contención tendrían un efecto esencialmente lineal.
 
-https://epidemic.phoenix-it-services.com
+Y esto está obviamente ligado al hecho de que en el caso de la nube, al ser cuidadoso sólo te proteges a ti mismo. Aquí protegemos a todos.
+
+Eso es todo lo que quería ilustrar. Toma el modelo de Excel, juega con él. Es sólo un modelo, el más simple de todos en epidemiología. NO tiene ningún valor predictivo sobre los detalles de los números. Está ahí para ilustrar el principio de la reacción en cadena, que está en el corazón de la noción de una epidemia. Los detalles del modelo no son importantes, este efecto de reacción en cadena existe en todos los modelos.
+
+Bajar el R0 rápidamente es muy accesible, sin caer necesariamente en una situación de "país muerto" o "ley marcial". Creo que el cierre de escuelas e instituciones educativas podría crear la señal necesaria para que todos se involucren. Y en pocas semanas se doblaría.
+
+Descargue el modelo de juguete. Juega con él. Compruébelo usted mismo.
+
+Edición del 13/03/2020: Mucha gente ha hecho pequeñas aplicaciones que ilustran el modelo de forma interactiva:
+
+[https://jflorian.shinyapps.io/SIRmodel/](https://jflorian.shinyapps.io/SIRmodel/)
+
+[https://sciencetonnante-epidemie.netlify.com](https://sciencetonnante-epidemie.netlify.com)
+
+[https://epidemic.phoenix-it-services.com](https://epidemic.phoenix-it-services.com)
