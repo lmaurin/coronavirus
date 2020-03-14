@@ -1,0 +1,4 @@
+analytics:
+    provider: "google-universal"
+    google:
+    tracking_id: "UA-160598389-1"

@@ -2,3 +2,8 @@ theme: jekyll-theme-minimal
 
 title: [Epidemia nube radioactiva y distanciamiento social]
 description: [Este es una traducción de un articulo de David Louapre en su blog "Science Etonnante". El articulo fue traducido y publicado con autorización del autor. El contenido traducido no esta bajo la responsabilidad del autor original.]
+
+analytics:
+  		provider: "google-universal"
+  	google:
+ 	tracking_id: "UA-160598389-1"
